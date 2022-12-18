@@ -1,4 +1,5 @@
 # practice
+
 html practice
 
 ## 基础练习
@@ -22,3 +23,7 @@ html practice
 ## 全民出游
 
 [全名出游案例](./%E5%85%A8%E6%B0%91%E5%87%BA%E6%B8%B8%E5%AD%A3/exersize.html "CSS动画案例")
+
+## 小兔鲜确认订单(移动web)
+
+[小兔鲜确认订单](./xtx-order/order.html "移动端flex布局案例")
