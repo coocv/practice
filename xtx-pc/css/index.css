@@ -1,0 +1,699 @@
+/** 主导航及Logo **/
+.header {
+    padding: 30px 0;
+}
+
+.header .logo {
+    float: left;
+    width: 207px;
+    height: 70px;
+    margin-left: 24px;
+    background-image: url(../images/logo.png);
+    background-size: contain;
+    font-size: 0;
+}
+
+.header .navs {
+    float: left;
+    margin-left: 40px;
+    /* line-height: 70px; */
+}
+
+.header .navs li {
+    float: left;
+    font-size: 16px;
+    margin-right: 44px;
+    line-height: 70px;
+}
+
+.header .navs li a {
+    padding: 10px 2px;
+    transition: all .5s;
+}
+
+.header .navs li a:hover {
+    color: #5eb69c;
+    border-bottom: 1px solid #5eb69c;
+
+}
+
+._header .search {
+    height: 30px;
+    /* padding-top: 60px; */
+    float: right;
+}
+
+.header .search_wrapper {
+    position: relative;
+    float: right;
+    width: 175px;
+    height: 30px;
+    margin-top: 25px;
+    padding-left: 39px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid #e7e7e7;
+}
+
+.header .search_wrapper:before {
+    content: '';
+    display: block;
+    width: 17px;
+    height: 17px;
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    background-image: url(../images/sprites.png);
+    background-size: 400px 400px;
+    background-position: -80px -70px;
+}
+
+.header .search_wrapper input {
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    color: #999;
+}
+
+.header .search_car {
+    float: right;
+    position: relative;
+    display: block;
+    width: 23px;
+    height: 23px;
+    margin: 25px 20px 16px 12px;
+    float: right;
+    background-position: -120px -70px;
+}
+
+.header .search_car i {
+    position: absolute;
+    top: -5px;
+    left: 16px;
+    width: 20px;
+    height: 15px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 15px;
+    background-color: #ea745e;
+    border-radius: 15px;
+    color: #fff;
+}
+
+/** 分类及焦点图 **/
+.entry {
+    position: relative;
+    height: 500px;
+    background-color: #f2f2f2;
+}
+
+.category {
+    position: absolute;
+    width: 250px;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 9;
+}
+
+.category li {
+    height: 50px;
+    transition: background-color .25s;
+    cursor: pointer;
+}
+
+.category li:hover {
+    background-color: #5eb69c;
+}
+
+.category_super a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    padding: 0 20px 0 40px;
+    color: #fff;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.category_super a small:first-child {
+    margin-left: 15px;
+    font-size: 14px;
+}
+
+.category:hover .category_subset {
+    display: block;
+}
+
+.category_super i {
+    float: right;
+    display: block;
+    margin-top: 20px;
+    width: 12px;
+    height: 12px;
+    background-position: -75px -110px;
+}
+
+.category_subset {
+    position: absolute;
+    top: 0;
+    left: 250px;
+    width: 990px;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+}
+
+.banner {
+    position: relative;
+    width: 1240px;
+    height: 500px;
+    overflow: hidden;
+}
+
+.banner>a.prev {
+    left: 270px;
+    background-position: 14px -59px;
+}
+
+.banner>a.next {
+    right: 20px;
+    background-position: -24px -59px;
+}
+
+.banner>a {
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin-top: -22px;
+    opacity: 0;
+    transition: opacity .5s;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.banner:hover a {
+    opacity: 1;
+}
+
+.banner .indicator {
+    position: absolute;
+    left: 250px;
+    bottom: 22px;
+    width: 990px;
+    text-align: center;
+}
+
+.banner .indicator span {
+    display: inline-block;
+    width: 9px;
+    height: 9px;
+    margin: 0 8px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.43);
+    cursor: pointer;
+}
+
+.banner .indicator span.active {
+    background-color: #fff;
+}
+
+
+/** 公共面板 **/
+.panel .panel_header {
+    height: 115px;
+    padding: 40px 0;
+}
+
+.panel .panel_header h3 {
+    float: left;
+    margin-left: 6px;
+    height: 35px;
+    font-size: 32px;
+    font-weight: 400;
+    color: #333;
+    line-height: 35px;
+}
+
+.panel .panel_header small {
+    margin-left: 22px;
+    font-size: 16px;
+    color: #999;
+}
+
+.panel .panel_header .more {
+    float: right;
+    line-height: 35px;
+    font-size: 16px;
+    color: #999;
+}
+
+.panel .panel_header .more i {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: 1px;
+    background-position: 8px -107px;
+}
+
+.panel .panel_goods {
+    text-align: justify;
+    font-size: 0;
+}
+
+.panel .panel_goods::after {
+    content: '';
+    display: inline-block;
+    width: 306px;
+    height: 0;
+}
+
+.panel .panel_goods a {
+    position: relative;
+    top: 0;
+    display: inline-block;
+    width: 305px;
+    height: 406px;
+    text-align: center;
+}
+
+.panel .panel_goods i {
+    position: absolute;
+    left: 16px;
+    top: 18px;
+    width: 28px;
+    height: 52px;
+    border-radius: 5px;
+    border: 3px solid #27ba9b;
+    font-size: 18px;
+    color: #27ba9b;
+    line-height: 22px;
+}
+
+.panel .panel_goods a img {
+    width: 305px;
+    height: 305px;
+}
+
+.goods .panel_goods a {
+    background-color: #F0F9F4;
+    transition: .2s;
+}
+
+.goods .panel_goods a:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    top: -3px;
+}
+
+.goods .panel_goods .name {
+    display: inline-block;
+    width: 100%;
+    margin: 12px 0 10px;
+    font-size: 22px;
+}
+
+.goods .panel_goods .price {
+    font-size: 23px;
+    color: #9A2E1F;
+}
+
+.goods .panel_goods .price small {
+    font-size: 16px;
+}
+
+/** 人气推荐 **/
+.popular {
+    padding-bottom: 42px;
+}
+
+.popular .panel_goods a {
+    transition: 0.2s;
+}
+
+.popular .panel_goods a:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transform: translate(0, -3px);
+}
+
+.popular .panel_goods .title {
+    display: inline-block;
+    width: 100%;
+    line-height: 1;
+    margin: 20px 0 16px;
+    font-size: 22px;
+}
+
+.popular .panel_goods .alt {
+    font-size: 18px;
+    color: #999;
+}
+
+/** 秒杀专区 **/
+.seckill {
+    background-color: #f5f5f5;
+    padding: 7px 0 55px;
+}
+
+.seckill .countdown {
+    float: left;
+    width: 240px;
+    height: 305px;
+    color: #fff;
+    line-height: 1;
+    text-align: center;
+    background-image: url(../images/seckill.jpg);
+    background-size: 240px;
+}
+
+.seckill .countdown .next {
+    font-size: 16px;
+    margin: 25px 0 14px;
+}
+
+.seckill .countdown .title {
+    font-size: 33px;
+}
+
+.seckill .countdown .tips {
+    margin-top: 112px;
+    font-size: 23px;
+}
+
+.seckill .countdown small {
+    font-size: 17px;
+}
+
+.seckill .countdown .clock {
+    width: 142px;
+    margin: 18px auto 0;
+    overflow: hidden;
+}
+
+.seckill .countdown .clock span,
+.seckill .countdown .clock i {
+    float: left;
+    display: block;
+    text-align: center;
+    line-height: 34px;
+    font-size: 23px;
+}
+
+.seckill .countdown .clock span {
+    width: 34px;
+    height: 34px;
+    border-radius: 2px;
+    background-color: #303430;
+}
+
+.seckill .countdown .clock i {
+    width: 20px;
+    font-style: normal;
+}
+
+.seckill .goods {
+    margin-left: 240px;
+}
+
+.seckill .goods li {
+    float: left;
+    width: 240px;
+    height: 305px;
+    padding-top: 20px;
+    margin-left: 10px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.seckill .goods a {
+    display: block;
+}
+
+.seckill .goods .img-box {
+    width: 240px;
+    height: 174px;
+    padding: 0 33px;
+    text-align: center;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.seckill .goods .name {
+    line-height: 1;
+    margin: 20px 0 12px;
+    font-size: 18px;
+}
+
+.seckill .goods .percent {
+    width: 165px;
+    height: 6px;
+    margin: 0 auto 12px;
+    border-radius: 6px;
+    background-color: #E2E2E2;
+}
+
+.seckill .goods .percent .inner {
+    display: block;
+    height: 100%;
+    border-radius: 6px;
+    background-color: #D54847;
+}
+
+.seckill .goods .price {
+    text-align: center;
+    font-size: 20px;
+}
+
+.seckill .goods .price span:first-child {
+    color: #9A2E1F;
+}
+
+.seckill .goods .price span:last-child {
+    color: #999;
+    font-size: 16px;
+    text-decoration: line-through;
+}
+
+.seckill .goods .price span:last-child small {
+    text-decoration: none;
+}
+
+.goods_brand {
+    padding-bottom: 45px;
+}
+
+.goods_brand .page-bar {
+    float: right;
+}
+
+.goods_brand .page-bar a {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 1;
+    margin-top: 10px;
+    background-color: #e2e2e2;
+}
+
+.goods_brand .page-bar a:hover,
+.goods_brand .page-bar a.active {
+    background-color: #5EB69C;
+}
+
+.goods_brand .page-bar .prev {
+    margin-right: 5px;
+    background-position: -32px -106px;
+    transform: rotate(180deg);
+}
+
+.goods_brand .page-bar .next {
+    background-position: -32px -106px;
+}
+
+
+.goods_brand .goods li {
+    float: left;
+    font-size: 0;
+}
+
+.goods_brand .goods a {
+    display: inline-block;
+    margin-right: 5px;
+    transition: all .5s;
+}
+
+.goods_brand .goods a img {
+    width: 244px;
+    height: 306px;
+}
+
+.goods_brand .goods a:last-child {
+    margin-right: 0;
+}
+
+.goods_brand .goods a:hover {
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.2);
+    transform: translate(0, -3px);
+}
+
+
+.goods_category {
+    background-color: #f5f5f5;
+    padding-bottom: 80px;
+}
+
+.panel_header .tabs-bar {
+    float: right;
+    height: 35px;
+    margin-right: 80px;
+    line-height: 35px;
+
+}
+
+.panel_header .tabs-bar a {
+    padding: 2px 8px;
+    margin-left: 5px;
+    border-radius: 2px;
+}
+
+.panel_header .tabs-bar a:hover,
+.panel_header .tabs-bar a.active {
+    background-color: #5eb69c;
+    color: #fff;
+}
+
+.panel .panel_goods_2 {
+    height: 610px;
+}
+
+.panel .panel_goods_2 li {
+    float: left;
+    position: relative;
+    width: 240px;
+    height: 300px;
+    padding-top: 10px;
+    margin-left: 10px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.panel .panel_goods_2 li:hover {
+    border-color: #5eb69c;
+
+}
+
+.panel .panel_goods_2 li:hover .extra {
+    bottom: 0;
+}
+
+.panel .panel_goods_2 li:first-child {
+    height: 610px;
+    padding-top: 0;
+    margin-left: 0;
+    border: 0;
+}
+
+.panel .panel_goods_2 li:nth-last-child(-n+4) {
+    margin-top: 10px;
+}
+
+.panel .panel_goods_2 a {
+    display: block;
+}
+
+.panel .panel_goods_2 .img-box {
+    width: 240px;
+    height: 160px;
+    padding: 0 33px;
+    text-align: center;
+    margin: 0 auto;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.panel .panel_goods_2 .meta {
+    height: 130px;
+    line-height: 1.3;
+    padding: 10px 22px 0;
+    font-size: 19px;
+    position: relative;
+}
+
+.panel .panel_goods_2 .name {
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.panel .panel_goods_2 .price {
+    font-size: 22px;
+    color: #9A2E1F;
+    position: absolute;
+    bottom: 10px;
+}
+
+.panel .panel_goods_2 .price small {
+    font-size: 17px;
+}
+
+.panel .panel_goods_2 .extra {
+    width: 100%;
+    height: 86px;
+    padding-top: 10px;
+    transition: bottom .5s;
+    background-color: #5EB69C;
+    position: absolute;
+    bottom: -86px;
+}
+
+.panel .panel_goods_2 .extra span {
+    display: block;
+    width: 124px;
+    line-height: 1;
+    padding: 9px 0 8px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 19px;
+    color: #fff;
+}
+
+.panel .panel_goods_2 .extra span:last-child {
+    font-size: 13px;
+    border-top: 1px solid #fff;
+}
+
+.panel .panel_goods_2 .label {
+    position: absolute;
+    left: 0;
+    bottom: 266px;
+    width: 188px;
+    height: 66px;
+    text-align: center;
+    line-height: 66px;
+    color: #fff;
+    font-size: 17px;
+    border-radius: 0 2px 2px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: relative;
+}
+
+.panel .panel_goods_2 .label span:first-child {
+    display: block;
+    width: 76px;
+    background-color: #000;
+}
+
+.panel .panel_goods_2 .label span:last-child {
+    width: 112px;
+    line-height: 1.4;
+    transform: translate(0, -50%);
+    position: absolute;
+    left: 76px;
+    right: 0;
+    top: 50%;
+}

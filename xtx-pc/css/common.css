@@ -1,0 +1,283 @@
+.wrapper {
+    width: 1240px;
+    margin: 0 auto;
+}
+
+.sprites {
+    background-image: url(../images/sprites.png);
+    background-size: 400px 400px;
+    background-repeat: no-repeat;
+}
+
+.topnav {
+
+    background-color: #333;
+}
+
+.topnav .navs {
+    height: 53px;
+    text-align: right;
+    line-height: 53px;
+}
+
+.topnav .navs li {
+    display: inline-block;
+    font-size: 14px;
+}
+
+.topnav .navs a {
+    display: inline-block;
+    padding: 0 15px;
+    border-right: 2px solid #666;
+    color: #dcdcdc;
+    line-height: 1;
+}
+
+.topnav .navs a:hover {
+    color: #5eb69c;
+
+}
+
+.topnav .navs li:last-child a {
+    border-right: none;
+}
+
+.topnav .navs .mobile {
+    display: inline-block;
+    width: 20px;
+    height: 16px;
+    position: relative;
+    top: 3px;
+    background-position: -160px -70px;
+}
+
+
+
+/* 公共底部 */
+.footer .contact dl {
+    float: left;
+    height: 190px;
+    text-align: center;
+    padding: 0 50px;
+    color: #999;
+}
+
+/* .footer .contact dl:first-child {
+    padding-left: 0;
+} */
+
+/* .footer .contact dl:last-child {
+    padding-right: 0;
+} */
+
+.footer .contact dt {
+    line-height: 1;
+    font-size: 18px;
+}
+
+.footer .contact dd {
+    margin: 36px 12px 0 0;
+    float: left;
+}
+
+.footer .contact dd:last-child {
+    margin-right: 0;
+}
+
+.contact {
+    padding: 80px 0;
+}
+
+.contact .chat,
+.contact .feedback,
+.contact .weixin,
+.contact .weibo {
+    width: 92px;
+    height: 92px;
+    padding-top: 20px;
+    border: 1px solid #ededed;
+}
+
+.contact .chat:before,
+.contact .feedback:before,
+.contact .weixin:before,
+.contact .weibo:before {
+    content: '';
+    display: block;
+    width: 40px;
+    height: 30px;
+    margin: 0 auto 8px;
+    background-image: url(../images/sprites.png);
+    background-size: 400px 400px;
+}
+
+.contact .chat:before {
+    background-position: -245px -70px;
+}
+
+
+.contact .chat:hover:before {
+    background-position: -200px -70px;
+}
+
+
+.contact .feedback:before {
+    background-position: -345px -70px;
+}
+
+
+.contact .feedback:hover:before {
+    background-position: -295px -70px;
+}
+
+
+.contact .weixin:before {
+    background-position: -247px -15px;
+}
+
+
+.contact .weixin:hover:before {
+    background-position: -202px -15px;
+}
+
+
+.contact .weibo:before {
+    background-position: -347px -15px;
+}
+
+
+.contact .weibo:hover:before {
+    background-position: -297px -15px;
+}
+
+.footer .contact .qrcode img {
+    width: 105px;
+    height: 105px;
+    /* margin-right: 22px; */
+    padding: 6px;
+    border: 2px solid #ededed;
+    text-align: center;
+}
+
+/* .footer .contact .qrcode img {
+    width: 105px;
+  } */
+.footer .contact .download {
+    margin-left: 22px;
+    padding-top: 5px;
+    font-size: 14px;
+}
+
+.footer .contact .download span {
+    display: block;
+}
+
+.footer .contact .download a {
+    display: block;
+    line-height: 1;
+    padding: 10px 25px;
+    margin-top: 8px;
+    color: #fff;
+    border-radius: 2px;
+    background-color: #5eb69c;
+}
+
+.footer .contact .hotline {
+    padding-top: 20px;
+    font-size: 22px;
+    color: #666;
+}
+
+.footer .contact .hotline small {
+    display: block;
+    margin-top: 5px;
+    font-size: 15px;
+    color: #999;
+}
+
+.footer .extra {
+    background-color: #333;
+}
+
+.footer .slogan {
+    display: inline-block;
+    height: 178px;
+
+    width: 100%;
+
+    line-height: 58px;
+
+    padding: 60px 46px;
+
+    border-bottom: 1px solid #434343;
+    text-align: center;
+    /* text-align: justify; */
+}
+
+/* .footer .slogan:after {
+    content: '';
+    display: inline-block;
+    width: 100%;
+    height: 0;
+} */
+
+.footer .slogan a {
+    display: inline-block;
+    margin-right: 300px;
+    height: 58px;
+    line-height: 58px;
+    color: #fff;
+    font-size: 28px;
+
+}
+.footer .slogan a:last-child{
+    margin-right: 0;
+}
+
+.footer .slogan a:before {
+    content: '';
+    display: inline-block;
+    width: 58px;
+    height: 58px;
+    margin-right: 10px;
+    /* float: left; */
+    background-image: url(../images/sprites.png);
+    background-size: 400px 400px;
+    vertical-align: middle;
+}
+
+.footer .slogan .price:before {
+    background-position: 0 0;
+}
+
+.footer .slogan .express:before {
+    background-position: -65px 0;
+}
+
+.footer .slogan .quality:before {
+    background-position: -130px 0;
+}
+
+.footer .copyright {
+    height: 170px;
+    padding-top: 40px;
+    text-align: center;
+    color: #999;
+    font-size: 14px;
+}
+
+.footer .copyright p {
+    line-height: 1;
+    margin-bottom: 20px;
+}
+
+.footer .copyright a {
+    color: #999;
+    line-height: 1;
+    padding: 0 10px 0 6px;
+    border-right: 1px solid #999;
+}
+
+.footer .copyright a:last-child {
+    border-right: none;
+}
