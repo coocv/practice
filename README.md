@@ -16,6 +16,14 @@ html practice
 
 [小兔鲜PC案例](./xtx-pc/index.html)
 
+## 双开门
+
+[双开门案例](./%E5%8F%8C%E5%BC%80%E9%97%A8/exercise.html)
+
+## 华为新闻
+
+[华为新闻案例](./%E5%8D%8E%E4%B8%BA%E6%96%B0%E9%97%BB/exercise.html)
+
 ## 走马灯
 
 [走马灯案例](./%E8%B5%B0%E9%A9%AC%E7%81%AF/08-%E8%B5%B0%E9%A9%AC%E7%81%AF.html)
