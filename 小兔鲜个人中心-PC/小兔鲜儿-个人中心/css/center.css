@@ -1,0 +1,363 @@
+.xtx_center {
+    padding: 28px 0 86px;
+    background-color: #f6f6f6;
+}
+
+.xtx_center .wrapper {
+    display: flex;
+}
+
+.xtx_center .aside {
+    width: 228px;
+    margin-right: 18px;
+    /* background-color: pink; */
+    /* min-height: 500px; */
+}
+
+.xtx_center .main {
+    flex: 1;
+    /* background-color: skyblue; */
+    min-height: 500px;
+}
+
+.aside {
+    padding-top: 47px;
+    /* padding: 47px 0 5px; */
+    background-color: #fff;
+}
+
+.aside .userinfo {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+
+    padding-bottom: 32px;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.aside .userinfo .pic {
+    width: 85px;
+    margin-bottom: 14px;
+}
+
+.aside .userinfo .name {
+    font-size: 18px;
+    color: #333;
+}
+
+.aside .userinfo .vip {
+    position: relative;
+    width: 94px;
+    height: 26px;
+    margin-top: 12px;
+    padding-left: 28px;
+    background-image: linear-gradient(264deg,
+            #e05e2f 0%,
+            #ea745e 95%);
+
+    border-radius: 13px;
+    font-size: 14px;
+    color: #f9f9f9;
+    line-height: 26px;
+}
+
+.aside .userinfo .vip::before {
+    position: absolute;
+    left: 10px;
+    top: 5px;
+    content: '';
+    width: 15px;
+    height: 16px;
+    background-image: url(../images/vip_gold.png);
+    background-size: contain;
+    /* vertical-align: middle; */
+}
+
+
+.usermanage,
+.deal,
+.cllection,
+.help {
+    padding: 8px 0;
+    background-color: #fff;
+    border-bottom: 1px solid #f4f4f4;
+
+}
+
+.aside h4 {
+    /* margin-bottom: 32px; */
+    padding: 15px 0 15px 52px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+
+.aside li a {
+    display: block;
+    position: relative;
+    padding: 15px 0 15px 52px;
+    font-size: 14px;
+    line-height: 1;
+    color: #666;
+}
+
+.aside li a:hover,
+.aside li a:active {
+    color: #5cb99e;
+}
+
+.aside a:hover::before,
+.aside a:active::before {
+    content: '';
+    position: absolute;
+    left: 30px;
+    top: 50%;
+    margin-top: -3px;
+    width: 6px;
+    height: 6px;
+    background-color: #5cb99e;
+    border-radius: 50%;
+}
+
+.help {
+    padding-bottom: 0;
+    border-bottom: none;
+}
+
+/* 内容区 */
+.overview {
+    display: flex;
+    height: 132px;
+    margin-bottom: 18px;
+    padding: 20px 0;
+    background-color: #fff;
+}
+
+.overview div {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+    line-height: 1;
+}
+
+.overview div p {
+    font-size: 16px;
+    color: #333;
+}
+
+.overview .left a img {
+    width: 25px;
+    margin-bottom: 15px;
+}
+
+.overview .left a:last-child img {
+    width: 18px;
+}
+
+.overview .left {
+    border-right: 1px solid #f4f4f4;
+}
+
+.overview .right span {
+    display: block;
+    font-size: 25px;
+    color: #e05e30;
+    margin-bottom: 15px;
+}
+
+.panle {
+    padding: 28px 20px 35px;
+    line-height: 1;
+    background-color: #fff;
+    margin-bottom: 20px;
+}
+
+.panle .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.panle .title h4 {
+    margin-left: 7px;
+    font-size: 22px;
+    color: #333;
+    font-weight: normal;
+}
+
+.panle .title a {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #999;
+}
+
+.orders li {
+    display: flex;
+    /* justify-content: space-evenly; */
+    margin: 20px 0;
+}
+
+.orders .goods {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    border: 1px solid #f4f4f4;
+}
+
+.goods .pic {
+    width: 107px;
+    height: 107px;
+    margin: 17px 0 12px 17px;
+    /* margin-left: 12px; */
+}
+
+.goods .text {
+    flex: 1;
+    width: 0;
+    
+}
+
+.goods .text h5 {
+    margin-right: 56px;
+    margin-bottom: 13px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.goods .text p {
+    font-size: 14px;
+    color: #999;
+}
+
+.goods .text p span {
+    margin-right: 10px;
+}
+
+.goods .status {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* margin-right: 72px; */
+    margin:0 72px;
+}
+
+.goods .status a:first-child {
+    padding: 0 5px;
+    font-size: 14px;
+    color: #e05e30;
+}
+.goods .status a:nth-child(2){
+    margin-top: 8px;
+    font-size: 14px;
+    color: #999;
+}
+
+.money {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 42px;
+    /* padding: 40px 0; */
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #f4f4f4;
+}
+
+.money .freight {
+
+    margin: 10px 0;
+}
+
+.money .price {
+    font-size: 14px;
+    color: #9a2e1f;
+}
+
+.action {
+    display: flex;
+    padding: 0 42px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #f4f4f4;
+}
+.action .btn {
+    display: block;
+    width: 100px;
+    height: 30px;
+    background-color: #5eb69c;
+	border-radius: 2px;
+    font-size: 14px;
+    color: #fff;
+    text-align: center;
+    line-height: 30px;
+}
+.action a:nth-child(2) {
+    margin: 16px 0 10px;
+}
+
+/* 收藏 */
+.panle .content{
+    margin-top: 15px;
+    border-top: 1px solid #f4f4f4;
+}
+.panle .content ul{
+    display: flex;
+    padding: 0 10px;
+    margin-top: 32px;
+    justify-content: space-between;
+}
+.panle .content li{
+    position: relative;
+    width: 180px;
+}
+.panle .content li .pic{
+    text-align: center; 
+}
+.panle .content img {
+    width: 160px;
+    height: 160px;
+}
+.panle .content h5 {
+    margin-top: 20px;
+    font-size: 16px;
+    font-weight: normal;
+    color: #333;
+    line-height: normal;
+    text-align: justify;
+}
+.panle .content p {
+    margin-top: 18px;
+    font-size: 17px;
+    font-weight: normal;
+    line-height: 1;
+    color: #9a2e1f;
+}
+.panle .content p span {
+    font-size: 22px;
+}
+.panle .tip{
+    position: absolute;
+    left: 2px;
+    width: 28px;
+    height: 51px;
+    font-size: 18px;
+    color: #5eb69c;
+    border-radius: 3px;
+    border: 2px solid #5eb69c;
+    text-align: center;
+    line-height: 22px;
+}
+
+.track {
+    margin-bottom: 0;
+}

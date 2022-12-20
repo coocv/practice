@@ -26,7 +26,7 @@ html practice
 
 ## 走马灯
 
-[走马灯案例](./%E8%B5%B0%E9%A9%AC%E7%81%AF/08-%E8%B5%B0%E9%A9%AC%E7%81%AF.html)
+[走马灯案例](./%E8%B5%B0%E9%A9%AC%E7%81%AF/%E8%B5%B0%E9%A9%AC%E7%81%AF.html)
 
 ## 全民出游
 
@@ -35,3 +35,7 @@ html practice
 ## 小兔鲜确认订单(移动web)
 
 [小兔鲜确认订单](./xtx-order/order.html "移动端flex布局案例")
+
+## 小兔鲜个人中心PC
+
+[小兔鲜个人中心](./%E5%B0%8F%E5%85%94%E9%B2%9C%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83-PC/%E5%B0%8F%E5%85%94%E9%B2%9C%E5%84%BF-%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/center.html)
