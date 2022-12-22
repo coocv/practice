@@ -39,3 +39,7 @@ html practice
 ## 小兔鲜个人中心PC
 
 [小兔鲜个人中心](./%E5%B0%8F%E5%85%94%E9%B2%9C%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83-PC/%E5%B0%8F%E5%85%94%E9%B2%9C%E5%84%BF-%E4%B8%AA%E4%BA%BA%E4%B8%AD%E5%BF%83/center.html)
+
+## 游乐园
+
+[游乐园移动端](./%E6%B8%B8%E4%B9%90%E5%9B%AD/FC/exercise.html "移动端Rem布局")
