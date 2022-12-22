@@ -12,9 +12,9 @@ html practice
 
 [学成在线案例](./%E5%AD%A6%E6%88%90%E5%9C%A8%E7%BA%BF/index.html)
 
-## 小兔鲜PC版
+## 小兔鲜首页-PC
 
-[小兔鲜PC案例](./xtx-pc/index.html)
+[小兔鲜首页-PC](./%E5%B0%8F%E5%85%94%E9%B2%9C%E9%A6%96%E9%A1%B5-PC/index.html)
 
 ## 双开门
 
@@ -34,7 +34,7 @@ html practice
 
 ## 小兔鲜确认订单(移动web)
 
-[小兔鲜确认订单](./xtx-order/order.html "移动端flex布局案例")
+[小兔鲜确认订单](./%E5%B0%8F%E5%85%94%E9%B2%9C%E7%A1%AE%E8%AE%A4%E8%AE%A2%E5%8D%95-%E7%A7%BB%E5%8A%A8/order.html "移动端flex布局案例")
 
 ## 小兔鲜个人中心PC
 
@@ -42,4 +42,4 @@ html practice
 
 ## 游乐园
 
-[游乐园移动端](./%E6%B8%B8%E4%B9%90%E5%9B%AD/FC/exercise.html "移动端Rem布局")
+[游乐园移动端](./%E6%B8%B8%E4%B9%90%E5%9B%AD-%E7%A7%BB%E5%8A%A8/FC/exercise.html "移动端Rem布局")
