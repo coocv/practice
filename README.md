@@ -43,3 +43,7 @@ html practice
 ## 游乐园
 
 [游乐园移动端](./%E6%B8%B8%E4%B9%90%E5%9B%AD-%E7%A7%BB%E5%8A%A8/FC/exercise.html "移动端Rem布局")
+
+## bilibili-m
+
+[Bilibili移动端](./m.bilibili/exercise.html "vw/vh布局")
