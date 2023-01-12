@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="control-group">
+        <span class="control-label">&nbsp;</span>
+        <label class="controls">
+          <input id="agree" name="m1" type="checkbox" />
+          <span>同意协议并注册《品优购用户协议》</span>
+        </label>
+      </div>
+      <div class="control-group">
+        <span class="control-label"></span>
+        <div class="controls btn-reg">
+          <button id="registerBtn" class="sui-btn btn-block btn-xlarge btn-danger" href="#">
+            完成注册
+          </button>
+        </div>
+      </div>
+</body>
+<script>
+    let agree = document.querySelector('#agree')
+    let btn = document.querySelector('#registerBtn')
+    agree.checked = false
+    btn.disabled = true
+    agree.addEventListener('click',function(){
+        btn.disabled = !this.checked
+        
+        
+    })
+</script>
+</html>

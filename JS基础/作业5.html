@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        // 点名: 每次刷新网页运行, 在控制台 随机输出一位同学的名字 
+        // ["老赵", "老李", "小传", "小黑"]，如果输出了，则数组中删除这个名字
+
+        function getRandom(min, max) {
+            return Math.floor(Math.random() * (max - min + 1)) + min
+        }
+        /*  let arr = ["老赵", "老李", "小传", "小黑"]
+         let random = getRandom(0, arr.length - 1)
+         console.log(arr[random])
+         arr.splice(random, 1)
+         console.log(arr) */
+
+
+        //          1. 声明一个变量per, 类型为对象类型
+        //          2. 该对象的属性为性别,年龄,爱好(3个)
+        //          3. 该对象的方法有 说话, 吃饭(2个)
+        //          4. 在控制台分别调用该对象的属性和方法
+        /*  let per = {
+             sex: '男',
+             age: 18,
+             hobby: 'play',
+             speak: function () {
+                 console.log('hi')
+             },
+             eat: function () {
+                 console.log('吃饱了');
+             }
+         }
+         console.log(per.age);
+         console.log(per.sex);
+         console.log(per.hobby);
+         per.speak()
+         per.eat() */
+
+
+        // 猜数字游戏，设定次数，最多猜8次
+        let bom = getRandom(0, 20)
+        let flag = false
+        for (let i = 1; i <= 8; i++) {
+            let num = +prompt('猜个数')
+            if (num > bom) {
+                alert('猜大了')
+            } else if (num < bom) {
+                alert('猜小了')
+            } else if (num === bom) {
+                alert('猜对了')
+                break
+            } 
+
+            flag = true
+                
+            
+        }
+        if (flag) {
+            alert('没机会了，太笨了，这都猜不到！O(∩_∩)O')
+        }
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        a {
+            width: 150px;
+            height: 30px;
+            text-decoration: none;
+            display: block;
+            margin: 10px auto;
+            background: goldenrod;
+            color: #fff;
+            border-radius: 15px;
+            line-height: 30px;
+        }
+
+        a:hover {
+            background: gold;
+            color: #666;
+        }
+
+        body {
+            background: #000;
+            text-align: center;
+        }
+
+        .list {
+            width: 500px;
+            margin: 20px auto;
+        }
+
+        .list li {
+            float: left;
+            position: relative;
+            transition: all 1s;
+            margin-top: 15px;
+        }
+
+        .list li:first-child {
+            margin-left: 0;
+        }
+
+        .list li:hover {
+            transform: scale(1.3);
+            z-index: 999;
+        }
+
+        .list li img {
+            width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <a href="javascript:" id="create">创建英雄列表</a>
+    <ul class="list">
+
+    </ul>
+    <script>
+        let datas = [
+			{ name: '司马懿', imgSrc: '01.jpg' },
+			{ name: '女娲', imgSrc: '02.jpg' },
+			{ name: '百里守约', imgSrc: '03.jpg' },
+			{ name: '亚瑟', imgSrc: '04.jpg' },
+			{ name: '虞姬', imgSrc: '05.jpg' },
+			{ name: '张良', imgSrc: '06.jpg' },
+			{ name: '安其拉', imgSrc: '07.jpg' },
+			{ name: '李白', imgSrc: '08.jpg' },
+			{ name: '阿珂', imgSrc: '09.jpg' },
+			{ name: '墨子', imgSrc: '10.jpg' },
+			{ name: '鲁班', imgSrc: '11.jpg' },
+			{ name: '嬴政', imgSrc: '12.jpg' },
+			{ name: '孙膑', imgSrc: '13.jpg' },
+			{ name: '周瑜', imgSrc: '14.jpg' },
+			{ name: 'XXX', imgSrc: '15.jpg' },
+			{ name: 'XXX', imgSrc: '16.jpg' },
+			{ name: 'XXX', imgSrc: '17.jpg' },
+			{ name: 'XXX', imgSrc: '18.jpg' },
+			{ name: 'XXX', imgSrc: '19.jpg' },
+			{ name: 'XXX', imgSrc: '20.jpg' }
+		];
+
+        // 一个图片对应一个li,一个图片的地址和title实际上就是我们datas数组里面的一个对象
+		// 获取元素
+		let link = document.getElementById('create')
+		let list = document.querySelector('.list')
+
+        link.addEventListener('click',function(){
+            for(let i = 0;i<datas.length;i++){
+            // 创建li
+				let newLi = document.createElement('li')
+				// 放到页面上
+				list.appendChild(newLi)
+
+                let img = document.createElement('img')
+
+                newLi.appendChild(img)
+
+                img.src = './images/heros/'+ datas[i].imgSrc
+                img.title = datas[i].name
+
+        }
+        })
+        
+    </script>
+</body>
+
+</html>
